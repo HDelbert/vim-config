@@ -12,7 +12,7 @@ let g:mapleader=";"
 " set lines=35 columns=118
 
 " 设置中文不能显示问题
-set fileencodings=utf-8,gb2312,gbk,gb18030
+set fileencodings=utf-8,utf-16le,gb2312,gbk,gb18030
 
 " 映射 jj 为 ESC 键
 imap jj <ESC>
