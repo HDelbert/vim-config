@@ -1,12 +1,16 @@
 " =============================
 " My vim config file
-" humeng,2016-1-14
-" version: 2.0
+" humeng,2018-1-4
+" version: 3.0
 " =============================
 
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"
 let g:mapleader=";"
+
+" 定义 tab 自动补全方式
+let g:SuperTabRetainCompletionType=2
+let g:SuperTabDefaultCompletionType="<C-N>"
 
 " 设置初始窗口大小
 " set lines=35 columns=118
@@ -92,9 +96,9 @@ if has('gui_running')
     set guioptions-=T
 
     if has('gui_win32')
-        set guifont=Inziu_IosevkaCC_CL:h10
+        set guifont=Inziu_Iosevka_Slab_CL:h10
     else
-        set guifont=Inziu\ IosevkaCC\ CL\ 10
+        set guifont=Inziu\ Iosevka\ Slab\ CL\ 10
     endif
 endif
 
@@ -121,8 +125,7 @@ set cindent
 " set autoindent
 
 " 删除所有行末的空格
-nnoremap <F12> :%s/[ \t\r]\+$//g<CR>
-
+nnoremap <F9>  :%s/[ ]\+$//g<CR>
 nnoremap <F10> :%s/\t/    /g<CR>
 
 " pathogen
